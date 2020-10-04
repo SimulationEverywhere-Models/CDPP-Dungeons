@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="http://www.example.org/DEVSModeler" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+  <CoupledModelType xmi:id="_KmfJoNB3EeeIgqYwg4J3ZQ" modelName="top" defined="true" sourceFileRelativePath="dungeon2.ma">
+    <coupledModels xmi:type="CoupledModelInstance" xmi:id="_KmfJodB3EeeIgqYwg4J3ZQ" instanceName="dungeon_generation">
+      <modelType xmi:type="CoupledModelType" xmi:id="_KmfJotB3EeeIgqYwg4J3ZQ" modelName="dungeon_generation"/>
+    </coupledModels>
+  </CoupledModelType>
+  <notation:Diagram xmi:id="_KmfJo9B3EeeIgqYwg4J3ZQ" type="DEVS" element="_KmfJoNB3EeeIgqYwg4J3ZQ" name="dungeon2.madesigner" measurementUnit="Pixel">
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_KmfJpNB3EeeIgqYwg4J3ZQ"/>
+  </notation:Diagram>
+</xmi:XMI>

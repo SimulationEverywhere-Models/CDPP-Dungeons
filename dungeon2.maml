@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CDPlusPlus_Builder_Version_1.0.0>
+  <top>
+    <components> dungeon_generation&#xd;</components>
+  </top>
+  <dungeon_generation>
+    <type> cell&#xd;</type>
+    <width> 30&#xd;</width>
+    <height> 30&#xd;</height>
+    <delay> inertial&#xd;</delay>
+    <defaultDelayTime> 100&#xd;</defaultDelayTime>
+    <border> wrapped &#xd;</border>
+    <neighbors> dungeon_generation(-1,1) dungeon_generation(0,1) dungeon_generation(1,1) &#xd;</neighbors>
+    <neighbors> dungeon_generation(0,-1)  dungeon_generation(0,0)  dungeon_generation(0,1)&#xd;</neighbors>
+    <neighbors> dungeon_generation(-1,-1)  dungeon_generation(0,-1)  dungeon_generation(1,-1)&#xd;</neighbors>
+    <initialvalue> 0&#xd;</initialvalue>
+    <initialrowvalue> 0     111111111111111111111111111111&#xd;</initialrowvalue>
+    <initialrowvalue> 1     111111111111111111111111101001 &#xd;</initialrowvalue>
+    <initialrowvalue> 2     111111111001111111111111000001&#xd;</initialrowvalue>
+    <initialrowvalue> 3     111111111001111110011110001001&#xd;</initialrowvalue>
+    <initialrowvalue> 4     111111111001111110000110011111&#xd;</initialrowvalue>
+    <initialrowvalue> 5     111111111110111111000011001111&#xd;</initialrowvalue>
+    <initialrowvalue> 6     111111111110011111100011100111&#xd;</initialrowvalue>
+    <initialrowvalue> 7     111111111110010011110001110011&#xd;</initialrowvalue>
+    <initialrowvalue> 8     111111111101100011111001110011&#xd;</initialrowvalue>
+    <initialrowvalue> 9     110111111000111110011001100111&#xd;</initialrowvalue>
+    <initialrowvalue> 10    100011100001111000000001100011&#xd;</initialrowvalue>
+    <initialrowvalue> 11    100000000011111000000000100111&#xd;</initialrowvalue>
+    <initialrowvalue> 12    100000000011111100000001000011&#xd;</initialrowvalue>
+    <initialrowvalue> 13    110000000001111100001101100011&#xd;</initialrowvalue>
+    <initialrowvalue> 14    111111111001111100001101100001&#xd;</initialrowvalue>
+    <initialrowvalue> 15    111111111000111110000100110001&#xd;</initialrowvalue>
+    <initialrowvalue> 16    111111110000011100000101110001&#xd;</initialrowvalue>
+    <initialrowvalue> 17    111111110000001100001011111001&#xd;</initialrowvalue>
+    <initialrowvalue> 18    111111110000001000001100111111&#xd;</initialrowvalue>
+    <initialrowvalue> 19    111111110000000100011110011111&#xd;</initialrowvalue>
+    <initialrowvalue> 20    111111110000001111101100011111&#xd;</initialrowvalue>
+    <initialrowvalue> 21    111111100000011111000110001111&#xd;</initialrowvalue>
+    <initialrowvalue> 22    110111000000011111001110000111&#xd;</initialrowvalue>
+    <initialrowvalue> 23    100000100000000111111110000111&#xd;</initialrowvalue>
+    <initialrowvalue> 24    110001100000000111111110000001&#xd;</initialrowvalue>
+    <initialrowvalue> 25    111101000000001101111111110001&#xd;</initialrowvalue>
+    <initialrowvalue> 26    111110011000010000111111111011&#xd;</initialrowvalue>
+    <initialrowvalue> 27    111111111100111000111111111111&#xd;</initialrowvalue>
+    <initialrowvalue> 28    111111111111111101111111111111&#xd;</initialrowvalue>
+    <initialrowvalue> 29    111111111111111111111111111111&#xd;</initialrowvalue>
+    <localtransition> dungeon_generation-rule&#xd;</localtransition>
+  </dungeon_generation>
+  <dungeon_generation-rule>
+    <rule> 0 100 { (0,0) = 1 and trueCount &lt; 4 }&#xd;</rule>
+    <rule> 0 100 { (0,1) = 1 and trueCount = 3 }&#xd;</rule>
+    <rule> 1 100 { (0,0) = 1 and trueCount &lt; 3 }&#xd;</rule>
+    <rule> 0 100 { (0,1) = 1 and trueCount &lt; 4 }&#xd;</rule>
+    <rule> {(0,0)} 100 { t }&#xd;</rule>
+  </dungeon_generation-rule>
+</CDPlusPlus_Builder_Version_1.0.0>
